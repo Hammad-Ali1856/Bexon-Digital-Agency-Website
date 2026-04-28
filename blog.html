@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bexon - Digital Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg py-3 sticky-top bg-white shadow-sm" data-aos="fade-down">
+        <div class="container-fluid px-md-5">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/assets/logo.webp" alt="Logo" width="120" class="me-2">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">Pages <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/service.html">Services <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Portfolio.html">Portfolio <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog.html">Blog <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+                <div class="search-trigger d-none d-md-flex">
+                    <i class="bi bi-search"></i>
+                </div>
+                <a href="#" class="btn-talk d-none d-sm-flex">
+                    Let's Talk 
+                    <span class="arrow-box"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <button class="menu-toggle border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                    <i class="bi bi-list fs-1"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+   <div class="offcanvas offcanvas-end custom-sidebar border-0" tabindex="-1" id="offcanvasRight">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+    <div class="offcanvas-body p-5">
+        <div class="d-flex align-items-center mb-4">
+             <img src="/assets/logo-2.webp" alt="Logo" width="120" class="me-2">
+        </div>
+
+       <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/about.html">Pages <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/service.html">Services <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/Portfolio.html">Portfolio <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/blog.html">Blog <i class="bi bi-chevron-down"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/contact.html">Contact</a></li>
+                </ul>
+
+        <div class="contact-section mt-5">
+            <h5 class="section-title">Contact Info</h5>
+            <div class="contact-item">
+                <span>Phone</span>
+                <p>+1 (009) 544-7818</p>
+            </div>
+            <div class="contact-item">
+                <span>Email</span>
+                <p>info@bexon.com</p>
+            </div>
+            <div class="contact-item">
+                <span>Location</span>
+                <p>993 Renner Burg, West Rond, MT 94251-030</p>
+            </div>
+        </div>
+
+        <div class="social-section mt-5">
+            <h5 class="section-title">Follow Us</h5>
+            <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="breadcrumb-area d-flex align-items-center justify-content-center text-center">
+        
+        <div class="breadcrumb-gradient-overlay"></div>
+        
+        <div class="container position-relative z-index-1">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="breadcrumb-title display-3 fw-bold text-white mb-3" data-aos="fade-up" data-aos-duration="1000">
+                        Read Blogs
+                    </h1>
+                    
+                    <div class="breadcrumb-nav-box d-inline-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="#"><i class="bi bi-house-door-fill me-1 teal-text"></i> Home</a>
+                                </li>
+                                <li class="breadcrumb-item active text-white" aria-current="page">Blogs</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blog-details py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+            
+            <div class="col-lg-8" data-aos="fade-up">
+                <div class="main-post-container bg-white rounded-4 overflow-hidden shadow-sm">
+                    <div class="position-relative">
+                        <img src="/assets/i3.jpg" class="img-fluid w-100" alt="Business Success">
+                        <div class="date-badge">
+                            <span class="day">28</span>
+                            <span class="month">JUL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 p-md-5">
+                        <div class="post-meta mb-3">
+                            <span class="badge-category">Corporate</span>
+                            <span class="author-name ms-3 text-muted">By Ellinien Loma</span>
+                        </div>
+                        <h1 class="post-title fw-bold mb-4">Innovative Solutions for every Business Success</h1>
+                        <p class="post-text text-muted">
+                            In today's fast-paced business environment, the key to staying ahead of the competition lies in embracing innovation. At [Company Name], we specialize in unlocking your business's full potential by providing tailored, forward-thinking solutions that drive growth, efficiency, and lasting success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                
+                <div class="sidebar-widget p-4 rounded-4 mb-4" data-aos="fade-left">
+                    <h4 class="fw-bold mb-4">Search here</h4>
+                    <div class="search-box position-relative">
+                        <input type="text" class="form-control" placeholder="Search here">
+                        <button class="search-btn"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget p-4 rounded-4" data-aos="fade-left" data-aos-delay="100">
+                    <h4 class="fw-bold mb-4">Related post</h4>
+                    
+                    <div class="related-item d-flex align-items-center mb-4">
+                        <img src="/assets/image1.jpg" class="rounded-3" alt="Thumb">
+                        <div class="ms-3">
+                            <h6 class="mb-1 fw-bold">Innovative Solutions for ever...</h6>
+                            <small class="text-muted">28 DEC 2025</small>
+                        </div>
+                    </div>
+
+                    <div class="related-item d-flex align-items-center mb-4">
+                        <img src="/assets/image2.jpg" class="rounded-3" alt="Thumb">
+                        <div class="ms-3">
+                            <h6 class="mb-1 fw-bold">Harnessing Digital Transform ...</h6>
+                            <small class="text-muted">06 NOV 2025</small>
+                        </div>
+                    </div>
+
+                    <div class="related-item d-flex align-items-center">
+                        <img src="/assets/image3.jpg" class="rounded-3" alt="Thumb">
+                        <div class="ms-3">
+                            <h6 class="mb-1 fw-bold">Mastering Change Management L...</h6>
+                            <small class="text-muted">24 OCT 2025</small>
+                        </div>
+                    </div>
+
+                      <div class="related-item d-flex align-items-center mb-4">
+                        <img src="/assets/image1.jpg" class="rounded-3" alt="Thumb">
+                        <div class="ms-3">
+                            <h6 class="mb-1 fw-bold">Innovative Solutions for ever...</h6>
+                            <small class="text-muted">28 DEC 2025</small>
+                        </div>
+                    </div>
+
+                    <div class="related-item d-flex align-items-center mb-4">
+                        <img src="/assets/image2.jpg" class="rounded-3" alt="Thumb">
+                        <div class="ms-3">
+                            <h6 class="mb-1 fw-bold">Harnessing Digital Transform ...</h6>
+                            <small class="text-muted">06 NOV 2025</small>
+                        </div>
+                    </div>
+
+                    <div class="related-item d-flex align-items-center">
+                        <img src="/assets/image3.jpg" class="rounded-3" alt="Thumb">
+                        <div class="ms-3">
+                            <h6 class="mb-1 fw-bold">Mastering Change Management L...</h6>
+                            <small class="text-muted">24 OCT 2025</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+   
+
+<section class="blog-sidebar-section py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+            
+            <div class="col-lg-8" data-aos="fade-up">
+                <div class="main-content-card bg-white rounded-4 overflow-hidden shadow-sm">
+                    <div class="position-relative">
+                        <img src="/assets/image1.jpg" class="img-fluid w-100 main-img" alt="Business Building">
+                        <div class="date-overlay">
+                            <span class="day">06</span>
+                            <span class="month">NOV</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 p-md-5">
+                        <div class="meta-info mb-3">
+                            <span class="badge-cat">Business</span>
+                            <span class="author-name ms-3 text-muted">By Ellinien Loma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="sidebar-wrapper p-4 rounded-4 h-100" data-aos="fade-left">
+                    <h3 class="fw-bold mb-4">Categories</h3>
+                    
+                    <div class="category-list d-flex flex-column gap-3">
+                        <div class="cat-item d-flex justify-content-between align-items-center p-3 bg-white rounded-3 shadow-sm">
+                            <span>Corporate</span>
+                            <span class="count text-muted">(02)</span>
+                        </div>
+                        <div class="cat-item d-flex justify-content-between align-items-center p-3 bg-white rounded-3 shadow-sm">
+                            <span>Business</span>
+                            <span class="count text-muted">(02)</span>
+                        </div>
+                        <div class="cat-item d-flex justify-content-between align-items-center p-3 bg-white rounded-3 shadow-sm">
+                            <span>Consuting</span>
+                            <span class="count text-muted">(02)</span>
+                        </div>
+                        <div class="cat-item d-flex justify-content-between align-items-center p-3 bg-white rounded-3 shadow-sm">
+                            <span>Innovations</span>
+                            <span class="count text-muted">(01)</span>
+                        </div>
+                        <div class="cat-item d-flex justify-content-between align-items-center p-3 bg-white rounded-3 shadow-sm">
+                            <span>Managements</span>
+                            <span class="count text-muted">(01)</span>
+                        </div>
+                        <div class="cat-item d-flex justify-content-between align-items-center p-3 bg-white rounded-3 shadow-sm">
+                            <span>Marketing</span>
+                            <span class="count text-muted">(01)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+   
+
+
+  
+
+
+
+<footer class="footer-section">
+    <div class="container">
+        
+        <div class="newsletter-banner mb-5 p-4 p-md-5 d-flex flex-wrap align-items-center justify-content-between">
+            <div class="footer-logo d-flex align-items-center mb-3 mb-lg-0">
+                <img src="/assets/logo.webp" alt="Logo" width="150" class="me-2">
+            </div>
+            
+            <div class="newsletter-input-group d-flex align-items-center">
+                <input type="email" placeholder="Enter email" class="form-control newsletter-input">
+                <button class="btn btn-teal2 rounded d-flex align-items-center gap-2">
+                    Send Message <span class="arrow-circle"><i class="bi bi-arrow-up-right"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row g-4 pt-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo d-flex align-items-center mb-3">
+                    <img src="/assets/logo.webp" alt="Logo" width="130" class="me-2">
+                </div>
+                <p class="footer-desc mb-4">Developing personalize our customer journeys to increase satisfaction & loyalty of our expansion.</p>
+                
+                <div class="awards d-flex gap-3 align-items-center">
+                    <div class="award-item text-center">
+                        <img src="https://img.icons8.com/ios/50/ffffff/laurel-wreath.png" width="40" alt="award">
+                        <div class="fw-bold small">18 <br><span class="opacity-50" style="font-size: 8px;">CLUTCH AWARDS</span></div>
+                    </div>
+                    <div class="award-item text-center">
+                        <img src="https://img.icons8.com/ios/50/ffffff/laurel-wreath.png" width="40" alt="award">
+                        <div class="fw-bold small">5 <br><span class="opacity-50" style="font-size: 8px;">AWWWARDS</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 px-lg-5">
+                <h5 class="footer-title">Services</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Customer Experience</a></li>
+                    <li><a href="#">Training Programs</a></li>
+                    <li><a href="#">Business Strategy</a></li>
+                    <li><a href="#">Training Program</a></li>
+                    <li><a href="#">ESG Consulting</a></li>
+                    <li><a href="#">Development Hub</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Resources</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Team Member</a></li>
+                    <li><a href="#">Recognitions</a></li>
+                    <li><a href="#">Careers <span class="badge rounded-pill bg-teal ms-1">NEW</span></a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Our Office</h5>
+                <p class="footer-desc mb-3">993 Renner Burg, West Rond, MT 94251-030, USA.</p>
+                <div class="contact-info">
+                    <p class="mb-1"><strong>P:</strong> +1 (009) 544-7818</p>
+                    <p class="mb-3"><strong>M:</strong> support@bexon.com</p>
+                    <p class="small opacity-75"><i class="bi bi-clock me-2 text-teal"></i> Mon-Fri 10am-10pm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top shadow-lg">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+</footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+
+</body>
+</html>

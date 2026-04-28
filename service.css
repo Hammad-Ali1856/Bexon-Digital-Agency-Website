@@ -1,0 +1,243 @@
+:root {
+  --primary-teal: #248b89;
+  --dark-navy: #0b1d24;
+  --form-bg-navy: #1a2a30;
+  --glass-input-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Styling for Images */
+.image-grid-section {
+  background-color: #f8f9fa;
+}
+
+.img-wrapper {
+  position: relative;
+  height: 350px; /* Fixed height for consistency */
+  background: #eee;
+}
+
+.custom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image ko stretch hone se bachata hai */
+  transition: transform 0.5s ease;
+}
+
+.img-wrapper:hover .custom-img {
+  transform: scale(1.05); /* Hover par halka sa zoom effect */
+}
+
+/* Responsive adjustment for Tablets/Mobile */
+@media (max-width: 991px) {
+  .img-wrapper {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-wrapper {
+    height: 250px;
+  }
+}
+
+/* Base Section Styling from Capture 4 */
+.integrated-contact-section {
+  background-color: var(--dark-navy);
+}
+
+/* Teal Color Utility */
+.teal-text {
+  color: var(--primary-teal) !important;
+}
+
+/* Dotted Map Background Logic */
+.dotted-map-bg {
+  background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="4" height="4" fill="%23248b89" opacity="0.3"/></svg>'); /* Simple placeholder dotted SVG */
+  min-height: 400px;
+  filter: blur(1px) opacity(0.8);
+  transition: 0.5s;
+}
+
+.dotted-map-bg:hover {
+  filter: blur(0);
+}
+
+/* Map Pins & Pulse Animation */
+.map-pins-container {
+  padding: 10% 20%;
+}
+
+.map-pin {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-pin .pulse {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  animation: pulse 1.5s infinite;
+}
+
+/* Specific Coordinates from Capture 4 */
+.map-pin.pin-1 {
+  top: 20%;
+  left: 30%;
+}
+.map-pin.pin-2 {
+  top: 60%;
+  left: 70%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Responsive Scaling */
+@media (max-width: 991px) {
+  .dotted-map-bg {
+    min-height: 300px;
+    padding: 50px 0;
+  }
+}
+
+.integrated-contact-section {
+  background-color: var(--dark-navy);
+}
+
+.glass-form-card {
+  background: rgba(255, 255, 255, 0.05); /* Slight visibility */
+  backdrop-filter: blur(10px);
+}
+
+/* Input Visibility Fix */
+.glass-input {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid var(--input-border) !important; /* Bottom line visible */
+  border-radius: 0 !important;
+  color: #ffffff !important; /* Input text white */
+  padding: 15px 0 !important;
+  box-shadow: none !important;
+
+}
+
+/* Placeholder color ko saaf dikhane ke liye */
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+  padding-bottom: 5%;
+   border-bottom: 1px solid white;
+}
+
+
+/* Submit Button & Icon */
+.btn-teal-submit {
+  background-color: var(--primary-teal);
+  border: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s ease;
+}
+
+.btn-teal-submit:hover {
+  background-color: #1e716f;
+  transform: translateY(-5px);
+  color: white;
+}
+
+.teal-text {
+  color: white;
+}
+
+
+.teal-text { color: var(--primary-teal); }
+
+
+
+/* Card Styling */
+.testimonial-card {
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.testimonial-card:hover{
+  transform: scale(1.02) !important;
+}
+
+.border-teal-light { border-color: #eee !important; }
+
+/* Active/Middle Card Highlight from Capture 12 */
+.active-card, .swiper-slide-active .testimonial-card {
+    border: 2px solid var(--primary-teal) !important;
+}
+
+.quote-icon i {
+    font-size: 50px;
+    opacity: 0.8;
+    transform: scaleX(-1); /* Reverse quote look */
+    display: inline-block;
+}
+
+.feedback-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.border-dotted {
+    border-top: 2px dotted #ddd;
+    opacity: 1;
+}
+
+.client-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Custom Swiper Buttons (Top Right) */
+.swiper-button-next-custom, .swiper-button-prev-custom {
+    width: 50px;
+    height: 50px;
+    background: #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #333;
+}
+
+.swiper-button-next-custom:hover, .swiper-button-prev-custom:hover {
+    background: var(--primary-teal);
+    color: white;
+}
+
+/* Badge Tag */
+.badge-tag-wrap {
+    background: #e0efef;
+    padding: 6px 15px;
+    border-radius: 4px;
+    display: inline-flex;
+}
+
+.badge-tag { font-size: 12px; letter-spacing: 1px; }
